@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Современная веб-студия</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo logo">
+                <a href="index.html" class="logo__link">WebStudio</a>
+            </div>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contacts.html" class="nav__link nav__link--active">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="header__burger burger" aria-label="Открыть меню">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="page-header__container">
+            <h1 class="page-header__title">Свяжитесь с нами</h1>
+            <p class="page-header__subtitle">Мы всегда рады ответить на ваши вопросы</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="contact-info__container">
+            <div class="contact-info__grid">
+                <div class="contact-card">
+                    <div class="contact-card__icon contact-card__icon--phone">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M12 8C12 7.44772 12.4477 7 13 7H17C17.5523 7 18 7.44772 18 8V12C18 12.5523 17.5523 13 17 13H15C15 18.5228 19.4772 23 25 23V21C25 20.4477 25.4477 20 26 20H30C30.5523 20 31 20.4477 31 21V25C31 25.5523 30.5523 26 30 26H26C17.7157 26 11 19.2843 11 11V8H12Z" fill="#6366f1"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Телефон</h3>
+                    <p class="contact-card__text">+7 (999) 123-45-67</p>
+                    <p class="contact-card__text">Пн-Пт: 9:00 - 18:00</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon contact-card__icon--email">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 10L20 20L35 10M5 10V30H35V10H5Z" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Email</h3>
+                    <p class="contact-card__text">info@webstudio.ru</p>
+                    <p class="contact-card__text">support@webstudio.ru</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon contact-card__icon--location">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5C14.4772 5 10 9.47715 10 15C10 22.5 20 35 20 35C20 35 30 22.5 30 15C30 9.47715 25.5228 5 20 5Z" stroke="#ec4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="20" cy="15" r="3" stroke="#ec4899" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="contact-card__title">Адрес</h3>
+                    <p class="contact-card__text">г. Москва</p>
+                    <p class="contact-card__text">ул. Примерная, д. 123</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="contact-form-section__container">
+            <div class="contact-form-section__content">
+                <h2 class="contact-form-section__title section-title">Напишите нам</h2>
+                <p class="contact-form-section__description">
+                    Заполните форму, и мы свяжемся с вами в ближайшее время
+                </p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="contact-form__row">
+                    <div class="form-field">
+                        <label for="name" class="form-field__label">Ваше имя *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            class="form-field__input" 
+                            required
+                            placeholder="Иван Иванов"
+                        >
+                        <span class="form-field__error">Пожалуйста, введите ваше имя</span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email" class="form-field__label">Email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form-field__input" 
+                            required
+                            placeholder="example@mail.ru"
+                        >
+                        <span class="form-field__error">Пожалуйста, введите корректный email</span>
+                    </div>
+                </div>
+
+                <div class="contact-form__row">
+                    <div class="form-field">
+                        <label for="phone" class="form-field__label">Телефон</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            class="form-field__input"
+                            placeholder="+7 (999) 123-45-67"
+                        >
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject" class="form-field__label">Тема обращения *</label>
+                        <select id="subject" name="subject" class="form-field__select" required>
+                            <option value="">Выберите тему</option>
+                            <option value="website">Разработка сайта</option>
+                            <option value="webapp">Веб-приложение</option>
+                            <option value="design">UI/UX дизайн</option>
+                            <option value="support">Техническая поддержка</option>
+                            <option value="other">Другое</option>
+                        </select>
+                        <span class="form-field__error">Пожалуйста, выберите тему</span>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="message" class="form-field__label">Сообщение *</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        class="form-field__textarea" 
+                        rows="5" 
+                        required
+                        placeholder="Опишите вашу задачу или вопрос..."
+                    ></textarea>
+                    <span class="form-field__error">Пожалуйста, введите сообщение</span>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__checkbox-label">
+                        <input 
+                            type="checkbox" 
+                            name="agreement" 
+                            class="form-field__checkbox" 
+                            required
+                        >
+                        <span class="form-field__checkbox-text">
+                            Я согласен с политикой обработки персональных данных *
+                        </span>
+                    </label>
+                    <span class="form-field__error">Необходимо согласие с политикой</span>
+                </div>
+
+                <button type="submit" class="contact-form__submit button button--primary">
+                    Отправить сообщение
+                </button>
+
+                <div class="contact-form__success" id="formSuccess">
+                    <p>✓ Спасибо! Ваше сообщение успешно отправлено.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="social">
+        <div class="social__container">
+            <h2 class="social__title section-title">Мы в социальных сетях</h2>
+            <div class="social__grid">
+                <a href="#" class="social-link social-link--telegram">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM20.8 10.7L18.6 20.6C18.4 21.5 17.9 21.7 17.2 21.3L13.4 18.5L11.6 20.2C11.4 20.4 11.2 20.6 10.8 20.6L11.1 16.7L18.1 10.4C18.4 10.1 18 10 17.6 10.3L9.2 15.7L5.5 14.5C4.6 14.2 4.6 13.6 5.7 13.2L19.8 8C20.6 7.7 21.3 8.2 21 9.2L20.8 10.7Z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-link__text">Telegram</span>
+                </a>
+
+                <a href="#" class="social-link social-link--vk">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.9 8.1 27.5 15 27.5C21.9 27.5 27.5 21.9 27.5 15C27.5 8.1 21.9 2.5 15 2.5ZM19.8 16.7C19.8 16.7 21 17.9 21.3 18.5C21.3 18.5 21.3 18.5 21.3 18.6C21.4 18.7 21.4 18.8 21.5 18.9C21.5 19 21.5 19.2 21.4 19.3C21.3 19.5 20.9 19.6 20.8 19.6H18.9C18.7 19.6 18.3 19.5 17.8 19.1C17.4 18.8 17 18.4 16.6 18C16 17.4 15.5 16.9 15 16.9C14.9 16.9 14.8 16.9 14.7 17C14.3 17.1 13.9 17.5 13.9 18.5C13.9 18.9 13.6 19.6 12.5 19.6C11.2 19.6 9.9 18.9 8.8 17.5C7.3 15.7 6 12.8 6 12.7C6 12.6 6 12.4 6.1 12.3C6.2 12.2 6.4 12.1 6.5 12.1H8.5C8.7 12.1 8.8 12.2 8.9 12.3C9 12.4 9 12.6 9.1 12.7C9.6 14 10.3 15.2 10.8 15.8C11 16.1 11.2 16.2 11.3 16.3C11.4 16.3 11.5 16.3 11.6 16.3C11.9 16.2 12.1 15.9 12.1 15.1V13.5C12.1 13.3 12.1 12.7 11.9 12.4C11.7 12.2 11.5 12.1 11.3 12.1C11.2 12.1 11.3 11.9 11.5 11.8C11.7 11.7 12.1 11.6 12.7 11.6H13.3C13.9 11.6 14.1 11.7 14.3 11.8C14.6 11.9 14.6 12.2 14.6 12.9V15C14.6 15.2 14.6 15.5 14.8 15.7C14.9 15.8 15 15.8 15.1 15.8C15.3 15.8 15.5 15.7 15.9 15.3C16.7 14.4 17.4 13.1 17.4 13.1C17.5 12.9 17.6 12.8 17.7 12.7C17.8 12.6 18 12.6 18.1 12.6H20.3C20.6 12.6 20.8 12.7 20.9 12.8C21 13 21 13.3 20.9 13.6C20.7 14.2 19.3 16.1 19.2 16.2C19.1 16.4 19.1 16.5 19.2 16.6C19.2 16.6 19.7 17.1 19.8 16.7Z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-link__text">ВКонтакте</span>
+                </a>
+
+                <a href="#" class="social-link social-link--github">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 20.6 6.1 25.3 11.1 26.9C11.7 27 11.9 26.6 11.9 26.3V24.4C8.7 25.1 8 23.1 8 23.1C7.5 21.7 6.7 21.3 6.7 21.3C5.6 20.6 6.8 20.6 6.8 20.6C8 20.7 8.6 21.8 8.6 21.8C9.7 23.6 11.5 23 12 22.8C12.1 22 12.5 21.5 12.8 21.2C10.4 20.9 7.9 19.9 7.9 15.4C7.9 14.1 8.3 13 9.1 12.2C9 11.9 8.6 10.7 9.2 9.1C9.2 9.1 10.2 8.8 11.9 10C12.9 9.7 13.9 9.6 15 9.6C16.1 9.6 17.1 9.7 18.1 10C19.8 8.8 20.8 9.1 20.8 9.1C21.4 10.7 21 11.9 20.9 12.2C21.7 13 22.1 14.1 22.1 15.4C22.1 19.9 19.6 20.9 17.2 21.2C17.6 21.6 17.9 22.3 17.9 23.4V26.3C17.9 26.6 18.1 27 18.7 26.9C23.9 25.3 27.5 20.6 27.5 15C27.5 8.1 21.9 2.5 15 2.5Z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-link__text">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3 class="footer__title">WebStudio</h3>
+                    <p class="footer__text">Создаем современные веб-решения для вашего бизнеса</p>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Навигация</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="index.html" class="footer__link">Главная</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="about.html" class="footer__link">О нас</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="contacts.html" class="footer__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__subtitle">Контакты</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">Email: info@webstudio.ru</li>
+                        <li class="footer__item">Тел: +7 (999) 123-45-67</li>
+                        <li class="footer__item">Москва, Россия</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 WebStudio. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

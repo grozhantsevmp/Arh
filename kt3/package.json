@@ -1,0 +1,13 @@
+{
+  "name": "solid-principles-demo",
+  "version": "1.0.0",
+  "description": "Демонстрация принципов SOLID",
+  "main": "dist/solid_principles.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/solid_principles.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+} 
